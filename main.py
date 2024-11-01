@@ -11,7 +11,7 @@ if __name__ == '__main__':
     EPOCHS = 10
     for epoch in range(0, EPOCHS):
         for image, label in train_dataloader:
-            image = image[0].detach().cpu().numpy().transpose(1, 2, 0)
+            image = image.detach().cpu().numpy()[0].transpose(1, 2, 0)
             print(f'Class label: {label[0]}')
             cv2.imshow('image', image)
 

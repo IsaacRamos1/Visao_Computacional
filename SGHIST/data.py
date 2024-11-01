@@ -13,6 +13,7 @@ from albumentations.pytorch import ToTensorV2
 class Data(Dataset):
     def __init__(self, image_dir: str, split: str, transform=None) -> None:
         self._image_dir = image_dir
+        self._transform = transform
         self._image_paths_class = []
 
         for class_dir in glob(f'{image_dir}/{split}/*'):
@@ -24,7 +25,6 @@ class Data(Dataset):
         # teste: quantidade de imagens carregadas => caminho está funcionando
         print(f"Total de imagens encontradas: {len(self._image_paths_class)}")
         
-        self._transform = transform
 
     def __len__(self) -> int:
         return len(self._image_paths_class)
@@ -53,17 +53,20 @@ class Dataloader:
         self._transform = self.compose()
         self._description = description
 
-    def compose(self, p: float = 0.5):
+    def compose(self, p: float = 1.0):
         # retornar o compose
-        # p = self._probability_aug[split] -----
         transform_list_train = A.Compose([
-            A.RandomCrop(height=self._size, width=self._size),
+            A.Resize(height=self._size, width=self._size),
             A.CLAHE(p=p),
+            A.RandomBrightnessContrast(p=p),
+            A.HueSaturationValue(p=p),
+            #A.GridDistortion(p=p),
+            #A.ElasticTransform(p=p),
             ToTensorV2()
         ])
 
         transform_list_test = A.Compose([
-            A.RandomCrop(height=self._size, width=self._size),
+            A.Resize(height=self._size, width=self._size),
             A.CLAHE(p=p),
             ToTensorV2()
         ])
