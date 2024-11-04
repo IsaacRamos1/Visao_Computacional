@@ -23,7 +23,7 @@ class Data(Dataset):
                 self._image_paths_class.append([image_path, class_name])
 
         # teste: quantidade de imagens carregadas => caminho está funcionando
-        print(f"Total de imagens encontradas: {len(self._image_paths_class)}")
+        print(f"\nTotal de imagens na pasta {split}: {len(self._image_paths_class)}")
         
 
     def __len__(self) -> int:
@@ -53,29 +53,37 @@ class Dataloader:
         self._transform = self.compose()
         self._description = description
 
-    def compose(self, p: float = 1.0):
+    def compose(self, p: float = 0.5):
         # retornar o compose
         transform_list_train = A.Compose([
             A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),
+            A.CLAHE(p=p),                                           # manter CLAHE, aplicar contrates diferentes e saturação da matiz
             A.RandomBrightnessContrast(p=p),
             A.HueSaturationValue(p=p),
-            #A.GridDistortion(p=p),
-            #A.ElasticTransform(p=p),
+            #A.GridDistortion(p=p),   -> teste de visualização: algoritmos não recomendados
+            #A.ElasticTransform(p=p),   
+            ToTensorV2()
+        ])
+
+        transform_list_val = A.Compose([
+            A.Resize(height=self._size, width=self._size),
+            A.CLAHE(p=p),                                           # mantive os mesmos pré-processamentos, futuras alterações
+            A.RandomBrightnessContrast(p=p),
+            A.HueSaturationValue(p=p),
             ToTensorV2()
         ])
 
         transform_list_test = A.Compose([
             A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),
+            A.CLAHE(p=p),                                           
+            A.RandomBrightnessContrast(p=p),
+            A.HueSaturationValue(p=p),
             ToTensorV2()
         ])
 
-        #if self._subset > 0:
-        #    transform_list.append(A.RandomResizedCrop(height=self._subset, width=self._subset)) 
-
         return {'train': transform_list_train,
-                'test': transform_list_test}
+                'test': transform_list_test,
+                'val': transform_list_val}
 
     def get_dataloader(self, split: str) -> DataLoader:
         # retornar o dataloader baseado no split
@@ -89,5 +97,9 @@ class Dataloader:
 
     def get_train_dataloader(self) -> DataLoader:
         return self.get_dataloader('train')
-    #def get_val_dataloader(self) -> DataLoader: return self.get_dataloader('val')
-    #def get_test_dataloader(self) -> DataLoader: return self.get_dataloader('test')
+    
+    def get_val_dataloader(self) -> DataLoader:
+        return self.get_dataloader('val')
+    
+    def get_test_dataloader(self) -> DataLoader:
+        return self.get_dataloader('test')
