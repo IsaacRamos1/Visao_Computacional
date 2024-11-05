@@ -53,13 +53,15 @@ class Dataloader:
         self._transform = self.compose()
         self._description = description
 
-    def compose(self, p: float = 0.5):
+    def compose(self, p: float = 1.0):
         # retornar o compose
         transform_list_train = A.Compose([
             A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           # manter CLAHE, aplicar contrates diferentes e saturação da matiz
+            A.UnsharpMask(p=p),
+            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
+            A.Sharpen(p=p),
+            #A.CLAHE(p=p),                                           # manter CLAHE, aplicar contrates diferentes
             A.RandomBrightnessContrast(p=p),
-            A.HueSaturationValue(p=p),
             #A.GridDistortion(p=p),   -> teste de visualização: algoritmos não recomendados
             #A.ElasticTransform(p=p),   
             ToTensorV2()
@@ -67,17 +69,21 @@ class Dataloader:
 
         transform_list_val = A.Compose([
             A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           # mantive os mesmos pré-processamentos, futuras alterações
+            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
+            A.Sharpen(p=p),
+            #A.CLAHE(p=p),                                           # mantive os mesmos pré-processamentos, futuras alterações
             A.RandomBrightnessContrast(p=p),
-            A.HueSaturationValue(p=p),
+            A.Sharpen(p=p),
             ToTensorV2()
         ])
 
         transform_list_test = A.Compose([
             A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           
+            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
+            A.Sharpen(p=p),
+            #A.CLAHE(p=p),                                           
             A.RandomBrightnessContrast(p=p),
-            A.HueSaturationValue(p=p),
+            A.Sharpen(p=p),
             ToTensorV2()
         ])
 
