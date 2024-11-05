@@ -57,10 +57,10 @@ class Dataloader:
         # retornar o compose
         transform_list_train = A.Compose([
             A.Resize(height=self._size, width=self._size),
+            A.CLAHE(p=p),                                           
             A.UnsharpMask(p=p),
             A.Morphological(p=p, scale=(2, 3), operation='erosion'),
             A.Sharpen(p=p),
-            #A.CLAHE(p=p),                                           # manter CLAHE, aplicar contrates diferentes
             A.RandomBrightnessContrast(p=p),
             #A.GridDistortion(p=p),   -> teste de visualização: algoritmos não recomendados
             #A.ElasticTransform(p=p),   
@@ -69,21 +69,25 @@ class Dataloader:
 
         transform_list_val = A.Compose([
             A.Resize(height=self._size, width=self._size),
+            A.CLAHE(p=p),                                           
+            A.UnsharpMask(p=p),
             A.Morphological(p=p, scale=(2, 3), operation='erosion'),
             A.Sharpen(p=p),
-            #A.CLAHE(p=p),                                           # mantive os mesmos pré-processamentos, futuras alterações
             A.RandomBrightnessContrast(p=p),
-            A.Sharpen(p=p),
+            #A.GridDistortion(p=p),   
+            #A.ElasticTransform(p=p),   
             ToTensorV2()
         ])
 
         transform_list_test = A.Compose([
             A.Resize(height=self._size, width=self._size),
+            A.CLAHE(p=p),                                           
+            A.UnsharpMask(p=p),
             A.Morphological(p=p, scale=(2, 3), operation='erosion'),
             A.Sharpen(p=p),
-            #A.CLAHE(p=p),                                           
             A.RandomBrightnessContrast(p=p),
-            A.Sharpen(p=p),
+            #A.GridDistortion(p=p),   
+            #A.ElasticTransform(p=p),   
             ToTensorV2()
         ])
 
