@@ -1,10 +1,10 @@
 import cv2
-import SGHIST
+import FUNGI
 
 if __name__ == '__main__':
     print('Executando...')
     batch_size = 2
-    dataloader = SGHIST.Dataloader(batch_size=batch_size, size=500, shuffle=True, description=True)
+    dataloader = FUNGI.Dataloader(batch_size=batch_size, size=500, shuffle=True, description=True)
 
     train_dataloader = dataloader.get_train_dataloader()
     val_dataloader = dataloader.get_val_dataloader()
