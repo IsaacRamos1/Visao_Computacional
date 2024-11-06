@@ -53,7 +53,7 @@ class Dataloader:
         self._transform = self.compose()
         self._description = description
 
-    def compose(self, p: float = 0.5):
+    def compose(self, p: float = 0.125):   # chance de 12.5% para aplicar uma transformação
         # retornar o compose
         transform_list_train = A.Compose([
             A.Resize(height=self._size, width=self._size),
