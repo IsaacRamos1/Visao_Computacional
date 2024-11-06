@@ -67,24 +67,12 @@ class Dataloader:
         ])
 
         transform_list_val = A.Compose([
-            A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           
-            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
-            A.Sharpen(p=p),
-            A.RandomBrightnessContrast(p=p),
-            #A.GridDistortion(p=p),   
-            #A.ElasticTransform(p=p),   
+            A.Resize(height=self._size, width=self._size),  
             ToTensorV2()
         ])
 
         transform_list_test = A.Compose([
-            A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           
-            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
-            A.Sharpen(p=p),
-            A.RandomBrightnessContrast(p=p),
-            #A.GridDistortion(p=p),   
-            #A.ElasticTransform(p=p),   
+            A.Resize(height=self._size, width=self._size), 
             ToTensorV2()
         ])
 
