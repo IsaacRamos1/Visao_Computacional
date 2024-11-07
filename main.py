@@ -19,3 +19,4 @@ if __name__ == '__main__':
 
             if cv2.waitKey(0) == ord('q'):
                 break
+                
