@@ -1,7 +1,7 @@
 import cv2
 import FUNGI
 import FUNGI.model
-from FUNGI.model import MyModel
+from FUNGI.model import MyModel, MyPreTrainedModel
 from torch import optim
 import torch.nn as nn
 from tqdm import tqdm
@@ -10,8 +10,8 @@ import torch
 
 if __name__ == '__main__':
     print('Executando...')
-    batch_size = 3
-    dataloader = FUNGI.Dataloader(batch_size=batch_size, size=500, shuffle=True, description=True)
+    batch_size = 32
+    dataloader = FUNGI.Dataloader(batch_size=batch_size, size=256, shuffle=True, description=True)
 
     train_dataloader = dataloader.get_train_dataloader()
     val_dataloader = dataloader.get_val_dataloader()
@@ -19,8 +19,8 @@ if __name__ == '__main__':
 
     #classe_idx = {'BASH': 0, 'BBH': 1, 'GMA': 2, 'SHC': 3, 'TSH': 4}
 
-<<<<<<< HEAD
-    model = MyModel(out_channels=5).to('cuda:0')
+    #model = MyModel(out_channels=5).to('cuda:0')
+    model = MyPreTrainedModel(out_channels=5).to('cuda:0')
     optim = optim.Adam(model.parameters(), lr=0.001)
     crit = nn.CrossEntropyLoss()
 
@@ -36,8 +36,10 @@ if __name__ == '__main__':
             label = label.to('cuda:0')
             optim.zero_grad()
             output = model(image)
-            print(f'<><><><>{output.shape}')
-            print(f'<><><><>{label.shape}')
+
+            #print(output.shape)
+            #print('-------------')
+            #print(label.shape)
             #exit()
             loss = crit(output, label)
             loss.backward()
@@ -62,8 +64,3 @@ if __name__ == '__main__':
 
 #                if cv2.waitKey(0) == ord('q'):
 #                    break
-=======
-            if cv2.waitKey(0) == ord('q'):
-                break
-##
->>>>>>> d12ae69e0ef19960b8889fa3f1aee21978470f1f
