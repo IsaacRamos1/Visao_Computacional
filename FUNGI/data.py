@@ -56,7 +56,7 @@ class Dataloader:
         self._transform = self.compose()
         self._description = description
 
-    def compose(self, p: float = 0.5):
+    def compose(self, p: float = 0.125):   # chance de 12.5% para aplicar uma transformação
         # retornar o compose
         transform_list_train = A.Compose([
             A.Resize(height=self._size, width=self._size),
@@ -70,24 +70,12 @@ class Dataloader:
         ])
 
         transform_list_val = A.Compose([
-            A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           
-            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
-            A.Sharpen(p=p),
-            A.RandomBrightnessContrast(p=p),
-            #A.GridDistortion(p=p),   
-            #A.ElasticTransform(p=p),   
+            A.Resize(height=self._size, width=self._size),  
             ToTensorV2()
         ])
 
         transform_list_test = A.Compose([
-            A.Resize(height=self._size, width=self._size),
-            A.CLAHE(p=p),                                           
-            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
-            A.Sharpen(p=p),
-            A.RandomBrightnessContrast(p=p),
-            #A.GridDistortion(p=p),   
-            #A.ElasticTransform(p=p),   
+            A.Resize(height=self._size, width=self._size), 
             ToTensorV2()
         ])
 
@@ -113,3 +101,4 @@ class Dataloader:
     
     def get_test_dataloader(self) -> DataLoader:
         return self.get_dataloader('test')
+##

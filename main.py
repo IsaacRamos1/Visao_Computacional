@@ -19,6 +19,7 @@ if __name__ == '__main__':
 
     #classe_idx = {'BASH': 0, 'BBH': 1, 'GMA': 2, 'SHC': 3, 'TSH': 4}
 
+<<<<<<< HEAD
     model = MyModel(out_channels=5).to('cuda:0')
     optim = optim.Adam(model.parameters(), lr=0.001)
     crit = nn.CrossEntropyLoss()
@@ -61,3 +62,8 @@ if __name__ == '__main__':
 
 #                if cv2.waitKey(0) == ord('q'):
 #                    break
+=======
+            if cv2.waitKey(0) == ord('q'):
+                break
+##
+>>>>>>> d12ae69e0ef19960b8889fa3f1aee21978470f1f
