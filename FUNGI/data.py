@@ -15,7 +15,8 @@ class Data(Dataset):
         self._image_dir = image_dir
         self._transform = transform
         self._image_paths_class = []
-
+        self._classe_idx = {'BASH': 0, 'BBH': 1, 'GMA': 2, 'SHC': 3, 'TSH': 4}
+        
         for class_dir in glob(f'{image_dir}/{split}/*'):
             class_name = os.path.basename(class_dir)
             image_paths = glob(f'{class_dir}/*.jpg')
@@ -31,8 +32,10 @@ class Data(Dataset):
 
     def __getitem__(self, idx: int) -> tuple:
         image_path, class_name = self._image_paths_class[idx]
+        class_name = self._classe_idx[class_name] # dicionario de classe-valores
         image = Image.open(image_path)
         image = np.asarray(image)
+        image = image.astype(np.float32) / 255.0 #
 
         if self._transform:
             augmented = self._transform(image=image)
