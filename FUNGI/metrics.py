@@ -1,4 +1,4 @@
-from sklearn.metrics import accuracy_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, recall_score, f1_score, balanced_accuracy_score
 import numpy as np
 
 class ClassificationMetrics:
@@ -13,11 +13,15 @@ class ClassificationMetrics:
         self._labels.extend(labels.cpu().numpy())
 
     def metrics(self):
+        classes = np.unique(self._labels)
+        all_classes = np.arange(len(classes))
+
         loss_medio = np.mean(self._losses)
         acuracia = accuracy_score(self._labels, self._predicoes)
-        recall = recall_score(self._labels, self._predicoes, average='macro')
-        f1 = f1_score(self._labels, self._predicoes, average='macro')
-        return loss_medio, acuracia, recall, f1
+        recall = recall_score(self._labels, self._predicoes, average='weighted', labels=all_classes, zero_division=0)
+        f1 = f1_score(self._labels, self._predicoes, average='weighted', labels=all_classes, zero_division=0)
+        balanced_acc = balanced_accuracy_score(self._labels, self._predicoes)
+        return loss_medio, acuracia, recall, f1, balanced_acc
 
     def reset(self):
         self._losses = []

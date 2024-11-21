@@ -14,7 +14,7 @@ import torch
 
 if __name__ == '__main__':
     print('Executando...')
-    batch_size = 16
+    batch_size = 32
     dataloader = FUNGI.Dataloader(batch_size=batch_size, size=256, shuffle=True, description=True)
 
     train_dataloader = dataloader.get_train_dataloader()
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     model = MyPreTrainedModel(out_channels=5).to('cuda:0')
     early_stopping = EarlyStopping(patience=3, min_delta=0.01)
 
-    optim = optim.Adam(model.parameters(), lr=0.0001)
+    optim = optim.Adam(model.parameters(), lr=0.01)
     scheduler = lr_scheduler.ReduceLROnPlateau(optim, mode='min', factor=0.1, patience=3)
 
     crit = nn.CrossEntropyLoss()
@@ -52,9 +52,9 @@ if __name__ == '__main__':
             #run_loss.append(loss.item())
             predicts = torch.argmax(output, dim=1)
             train_metrics.update(loss.item(), predicts, label)
-            _, run_acc, _, _ = train_metrics.metrics()
+            _, run_acc, _, _, balanced_acc = train_metrics.metrics()
 
-            train_samples.set_description(f'Epoca {epoca+1}/{epocas}, acc: {run_acc:.4f} , loss: {np.mean(train_metrics._losses):0.6f}')
+            train_samples.set_description(f'Epoca {epoca+1}/{epocas}, loss: {np.mean(train_metrics._losses):0.6f}, balanced acc: {balanced_acc:0.6f}')
 
 
         model.eval()
@@ -70,7 +70,7 @@ if __name__ == '__main__':
                 loss = crit(output, label)
                 predicts = torch.argmax(output, dim=1)
                 val_metrics.update(loss.item(), predicts, label)
-                val_loss, val_acc, _, _ = val_metrics.metrics()
+                val_loss, val_acc, _, _, _ = val_metrics.metrics()
                 val_running_loss.append(val_loss)
                 val_running_acc.append(val_acc)
 
@@ -80,15 +80,24 @@ if __name__ == '__main__':
 
             if early_stopping.must_stop_func():
                 print('Early Stopping .......')
+                print(f'\nEpoca {epoca+1}/{epocas}')
+                print(f'Treino -> Loss: {train_loss:0.6f}, Acurácia: {train_acc:0.6f}, \
+                  \nRecall: {train_recall:0.6f}, F1-Score: {train_f1:0.6f}, Balanced_acc: {train_balanced_acc: 0.6f}')
+                
+                print(f'Validação -> Loss: {val_loss:0.6f}, Acurácia: {val_acuracia:0.6f}, \
+                  \nRecall: {val_recall:0.6f}, F1-Score: {val_f1:0.6f}, Balanced_acc: {val_balanced_acc:0.6f}\n')
                 break
             else:
                 print('continuando...')
 
-            train_loss, train_acc, train_recall, train_f1 = train_metrics.metrics()
-            val_loss, val_acuracia, val_recall, val_f1 = val_metrics.metrics()
+            train_loss, train_acc, train_recall, train_f1, train_balanced_acc = train_metrics.metrics()
+            val_loss, val_acuracia, val_recall, val_f1, val_balanced_acc = val_metrics.metrics()
 
             print(f'\nEpoca {epoca+1}/{epocas}')
-            print(f'Treino -> Loss: {train_loss:.4f}, Acurácia: {train_acc:.4f}, Recall: {train_recall:.4f}, F1-Score: {train_f1:.4f}')
-            print(f'Validação -> Loss: {val_loss:.4f}, Acurácia: {val_acuracia:.4f}, Recall: {val_recall:.4f}, F1-Score: {val_f1:.4f}\n')
+            print(f'Treino -> Loss: {train_loss:0.6f}, Acurácia: {train_acc:0.6f}, \
+                  \nRecall: {train_recall:0.6f}, F1-Score: {train_f1:0.6f}, Balanced_acc: {train_balanced_acc: 0.6f}')
+            
+            print(f'Validação -> Loss: {val_loss:0.6f}, Acurácia: {val_acuracia:0.6f}, \
+                  \nRecall: {val_recall:0.6f}, F1-Score: {val_f1:0.6f}, Balanced_acc: {val_balanced_acc:0.6f}\n')
 
 
