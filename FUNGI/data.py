@@ -56,21 +56,29 @@ class Dataloader:
         self._transform = self.compose()
         self._description = description
 
-    def compose(self, p: float = 0.125):   # chance de 12.5% para aplicar uma transformação
+    def compose(self, p: float = 0.5):   # chance de 12.5% para aplicar uma transformação
         # retornar o compose
         transform_list_train = A.Compose([
             A.Resize(height=self._size, width=self._size),
             A.CLAHE(p=p),                                           
-            A.Morphological(p=p, scale=(2, 3), operation='erosion'),
-            A.Sharpen(p=p),
+            A.HorizontalFlip(p=p),
+            A.VerticalFlip(p=p),
+            A.Rotate(limit=30, p=p),
             A.RandomBrightnessContrast(p=p),
-            #A.GridDistortion(p=p),   -> teste de visualização: algoritmos não recomendados
-            #A.ElasticTransform(p=p),   
+            #A.RandomResizedCrop(height=self._size, width=self._size, scale=(0.8, 1.0)),
+            #A.CoarseDropout(p=p, max_height=16, max_width=16),
             ToTensorV2()
         ])
 
         transform_list_val = A.Compose([
-            A.Resize(height=self._size, width=self._size),  
+            A.Resize(height=self._size, width=self._size),
+            A.CLAHE(p=p),
+            A.HorizontalFlip(p=p),
+            A.VerticalFlip(p=p),
+            A.Rotate(limit=30, p=p),
+            A.RandomBrightnessContrast(p=p),
+            #A.RandomResizedCrop(height=self._size, width=self._size, scale=(0.8, 1.0)),
+            #A.CoarseDropout(p=p, max_height=16, max_width=16),
             ToTensorV2()
         ])
 

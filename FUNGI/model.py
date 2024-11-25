@@ -28,8 +28,10 @@ class MyModel(nn.Module):
 class MyPreTrainedModel(nn.Module):
     def __init__(self, out_channels=5):
         super(MyPreTrainedModel, self).__init__()
-        self.model = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V1)
-        self.model.fc = nn.Linear(self.model.fc.in_features, out_channels)
+        #self.model = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V1)
+        #self.model.fc = nn.Linear(self.model.fc.in_features, out_channels)
+        self.model = models.efficientnet_b1(weights=models.EfficientNet_B1_Weights.IMAGENET1K_V1)
+        self.model.classifier[1] = nn.Linear(self.model.classifier[1].in_features, out_channels)
 
     def forward(self, x):
         return self.model(x)
