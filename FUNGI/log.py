@@ -1,34 +1,52 @@
 from torch.utils.tensorboard import SummaryWriter
 
-class TensorboardLogger:
-    def __init__(self, log_dir: str = 'runs'):
+class TensorBoardMonitor:
+    def __init__(self, log_dir: str = "runs", comment: str = "") -> None:
         """
-        Inicializa o logger do TensorBoard.
-        Args:
-            log_dir (str): Diretório para salvar os logs do TensorBoard.
+        Inicializa o monitor do TensorBoard.
+        :param log_dir: Diretório onde os logs serão armazenados.
+        :param comment: Comentário para diferenciar experimentos.
         """
-        self.writer = SummaryWriter(log_dir=log_dir)
+        self.writer = SummaryWriter(log_dir=log_dir, comment=comment)
 
-    def log_metrics(self, phase: str, epoch: int, loss: float, accuracy: float, recall: float, f1: float, balanced_acc: float):
+    def log_train_val_metrics(self, epoch: int, metric_name: str, train_value: float, val_value: float) -> None:
         """
-        Registra as métricas no TensorBoard.
-        Args:
-            phase (str): Fase atual ('train' ou 'val').
-            epoch (int): Época atual.
-            loss (float): Perda.
-            accuracy (float): Acurácia.
-            recall (float): Recall.
-            f1 (float): F1-score.
-            balanced_acc (float): Balanced Accuracy.
+        Loga métricas de treino e validação em um único gráfico.
+        :param epoch: Número da época atual.
+        :param metric_name: Nome da métrica (ex.: 'loss', 'accuracy').
+        :param train_value: Valor da métrica para o treino.
+        :param val_value: Valor da métrica para a validação.
         """
-        self.writer.add_scalar(f'{phase}/Loss', loss, epoch)
-        self.writer.add_scalar(f'{phase}/Accuracy', accuracy, epoch)
-        self.writer.add_scalar(f'{phase}/Recall', recall, epoch)
-        self.writer.add_scalar(f'{phase}/F1-Score', f1, epoch)
-        self.writer.add_scalar(f'{phase}/Balanced_Accuracy', balanced_acc, epoch)
+        # Registra treino e validação com a mesma tag, mas com labels diferentes
+        self.writer.add_scalars(metric_name, {
+            "train": train_value,
+            "val": val_value
+        }, epoch)
+        
+    def log_metrics(self, epoch: int, phase: str, metrics: dict, lr: float = None) -> None:
+        """
+        Loga as métricas no TensorBoard.
+        :param epoch: Número da época atual.
+        :param phase: Fase do treinamento ("train" ou "val").
+        :param metrics: Dicionário contendo as métricas a serem logadas.
+        :param lr: Taxa de aprendizado atual.
+        """
+        for key, value in metrics.items():
+            self.writer.add_scalar(f"{key}/{phase}", value, epoch)
+            #self.writer.add_scalar(key, value, epoch)
+        if lr is not None:
+            self.writer.add_scalar("LearningRate", lr, epoch)
 
-    def close(self):
+    def log_model_graph(self, model, inputs) -> None:
         """
-        Fecha o logger do TensorBoard.
+        Loga a arquitetura do modelo.
+        :param model: Modelo PyTorch.
+        :param inputs: Exemplo de entrada para o modelo.
+        """
+        self.writer.add_graph(model, inputs)
+
+    def close(self) -> None:
+        """
+        Fecha o escritor do TensorBoard.
         """
         self.writer.close()

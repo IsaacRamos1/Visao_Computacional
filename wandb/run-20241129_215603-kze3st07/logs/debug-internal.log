@@ -1,0 +1,16 @@
+{"time":"2024-11-29T21:56:03.7532985-03:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-29T21:56:03.7532985-03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\isaac\\Desktop\\UFPI_2023\\Mestrado_2024\\Sistemas_de_Computacao_Visual\\Visao_Computacional\\wandb\\run-20241129_215603-kze3st07\\logs\\debug-core.log"}
+{"time":"2024-11-29T21:56:04.0078096-03:00","level":"INFO","msg":"created new stream","id":"kze3st07"}
+{"time":"2024-11-29T21:56:04.0078096-03:00","level":"INFO","msg":"stream: started","id":"kze3st07"}
+{"time":"2024-11-29T21:56:04.0078096-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"kze3st07"}
+{"time":"2024-11-29T21:56:04.0078096-03:00","level":"INFO","msg":"handler: started","stream_id":"kze3st07"}
+{"time":"2024-11-29T21:56:04.0078096-03:00","level":"INFO","msg":"sender: started","stream_id":"kze3st07"}
+{"time":"2024-11-29T21:56:04.3657554-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-29T23:01:12.6296361-03:00","level":"INFO","msg":"stream: closing","id":"kze3st07"}
+{"time":"2024-11-29T23:01:12.6296361-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-29T23:01:12.6303392-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-29T23:01:15.1952021-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-29T23:01:15.4956777-03:00","level":"INFO","msg":"handler: closed","stream_id":"kze3st07"}
+{"time":"2024-11-29T23:01:15.4956777-03:00","level":"INFO","msg":"sender: closed","stream_id":"kze3st07"}
+{"time":"2024-11-29T23:01:15.4956777-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kze3st07"}
+{"time":"2024-11-29T23:01:15.4961917-03:00","level":"INFO","msg":"stream: closed","id":"kze3st07"}

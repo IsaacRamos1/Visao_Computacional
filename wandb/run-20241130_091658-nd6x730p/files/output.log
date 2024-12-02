@@ -1,0 +1,27 @@
+Epoca 1/1000, loss: 1.607174, balanced acc: 0.191667:   0%|                                                          | 0/99 [00:01<?, ?it/s]
+  0%|                                                                                                                | 0/13 [00:00<?, ?it/s]
+[0.001]
+Best Loss: 1.5925267934799194 | Current loss: 1.5925267934799194 | strikes: 0
+continuando...
+Iniciando teste...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:06<00:00,  2.00it/s]
+Teste -> Loss: 1.614602, Acurácia: 0.219223,
+Recall: 0.219223, F1-Score: 0.139781, Balanced_acc: 0.221374
+C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Relatório de Classificação:
+               precision    recall  f1-score   support
+
+    Classe 0       0.00      0.00      0.00        78
+    Classe 1       0.00      0.00      0.00        74
+    Classe 2       0.50      0.01      0.02        82
+    Classe 3       0.25      0.34      0.29        82
+    Classe 4       0.22      0.71      0.33        80
+
+    accuracy                           0.22       396
+   macro avg       0.19      0.21      0.13       396
+weighted avg       0.20      0.22      0.13       396

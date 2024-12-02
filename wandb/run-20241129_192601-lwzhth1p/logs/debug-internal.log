@@ -1,0 +1,8 @@
+{"time":"2024-11-29T19:26:01.1094536-03:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-29T19:26:01.1094536-03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\isaac\\Desktop\\UFPI_2023\\Mestrado_2024\\Sistemas_de_Computacao_Visual\\Visao_Computacional\\wandb\\run-20241129_192601-lwzhth1p\\logs\\debug-core.log"}
+{"time":"2024-11-29T19:26:01.3569375-03:00","level":"INFO","msg":"created new stream","id":"lwzhth1p"}
+{"time":"2024-11-29T19:26:01.3569375-03:00","level":"INFO","msg":"stream: started","id":"lwzhth1p"}
+{"time":"2024-11-29T19:26:01.3569375-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lwzhth1p"}
+{"time":"2024-11-29T19:26:01.3569375-03:00","level":"INFO","msg":"handler: started","stream_id":"lwzhth1p"}
+{"time":"2024-11-29T19:26:01.3569375-03:00","level":"INFO","msg":"sender: started","stream_id":"lwzhth1p"}
+{"time":"2024-11-29T19:26:01.7911239-03:00","level":"INFO","msg":"Starting system monitor"}

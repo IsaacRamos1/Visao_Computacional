@@ -1,6 +1,7 @@
 import torch.nn as nn
 import torch
 import torchvision.models as models
+import torch.nn.functional as F
 
 class MyModel(nn.Module):
     def __init__(self, in_channels=3, out_channels=5):
@@ -26,13 +27,27 @@ class MyModel(nn.Module):
     
 
 class MyPreTrainedModel(nn.Module):
-    def __init__(self, out_channels=5):
+    def __init__(self, name: str, out_channels=5):
         super(MyPreTrainedModel, self).__init__()
-        #self.model = models.resnet101(weights=models.ResNet101_Weights.IMAGENET1K_V1)
+        self._activation = nn.LeakyReLU(negative_slope=0.01, inplace=True)
+        #self._activation = nn.Softmax(dim=-1)
+
+        self._name = name
+        #self.model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
         #self.model.fc = nn.Linear(self.model.fc.in_features, out_channels)
-        self.model = models.efficientnet_b1(weights=models.EfficientNet_B1_Weights.IMAGENET1K_V1)
+
+        self.model = models.efficientnet_b0(weights=models.EfficientNet_B0_Weights.IMAGENET1K_V1)
         self.model.classifier[1] = nn.Linear(self.model.classifier[1].in_features, out_channels)
+        
+        #self.model = models.inception_v3(weights=models.Inception_V3_Weights.IMAGENET1K_V1)   
+        #self.model.fc = nn.Linear(self.model.fc.in_features, out_channels)
+        #self.model.aux_logits = False
+
+        #self.model = models.vgg19(weights=models.VGG19_Weights.IMAGENET1K_V1)
+        #in_features = self.model.classifier[-1].in_features
+        #self.model.classifier[-1] = nn.Linear(in_features, out_channels)
 
     def forward(self, x):
+        #return self._activation(self.model(x))
         return self.model(x)
 

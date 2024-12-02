@@ -1,0 +1,40 @@
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 1/1000, loss: 1.494125, balanced acc: 0.377303: 100%|███████████████████████████████████████████████| 198/198 [01:12<00:00,  2.74it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:04<00:00,  3.20it/s]
+[1e-05]
+Best Loss: 1.3732585173386793 | Current loss: 1.3732585173386793 | strikes: 0
+continuando...
+
+Epoca 1/1000
+Treino -> Loss: 1.548269, Acurácia: 0.315237,
+Recall: 0.315237, F1-Score: 0.316097, Balanced_acc:  0.313672
+Validação -> Loss: 1.373259, Acurácia: 0.445834,
+Recall: 0.445834, F1-Score: 0.447461, Balanced_acc: 0.442778
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 2/1000, loss: 1.283227, balanced acc: 0.524400: 100%|███████████████████████████████████████████████| 198/198 [01:14<00:00,  2.64it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:04<00:00,  3.14it/s]
+
+[1e-05]
+Best Loss: 1.178561297746805 | Current loss: 1.178561297746805 | strikes: 0
+continuando...
+
+Epoca 2/1000
+Treino -> Loss: 1.328282, Acurácia: 0.508000,
+Recall: 0.508000, F1-Score: 0.504600, Balanced_acc:  0.507626
+Validação -> Loss: 1.178561, Acurácia: 0.592008,
+Recall: 0.592008, F1-Score: 0.574279, Balanced_acc: 0.584711
+Epoca 3/1000, loss: 1.129057, balanced acc: 0.593473: 100%|███████████████████████████████████████████████| 198/198 [01:21<00:00,  2.44it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:04<00:00,  3.01it/s]
+
+[1e-05]
+Best Loss: 1.0300424649165227 | Current loss: 1.0300424649165227 | strikes: 0
+continuando...
+
+Epoca 3/1000
+Treino -> Loss: 1.171886, Acurácia: 0.575384,
+Recall: 0.575384, F1-Score: 0.561831, Balanced_acc:  0.577649
+Validação -> Loss: 1.030042, Acurácia: 0.649045,
+Recall: 0.649045, F1-Score: 0.625032, Balanced_acc: 0.632662
+Epoca 4/1000, loss: 1.075680, balanced acc: 0.630131:  18%|████████▍                                       | 35/198 [00:14<01:06,  2.46it/s]

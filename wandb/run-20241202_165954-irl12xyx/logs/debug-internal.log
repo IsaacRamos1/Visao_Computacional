@@ -1,0 +1,8 @@
+{"time":"2024-12-02T16:59:54.6053374-03:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-12-02T16:59:54.6053374-03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\isaac\\Desktop\\UFPI_2023\\Mestrado_2024\\Sistemas_de_Computacao_Visual\\Visao_Computacional\\wandb\\run-20241202_165954-irl12xyx\\logs\\debug-core.log"}
+{"time":"2024-12-02T16:59:54.9145317-03:00","level":"INFO","msg":"created new stream","id":"irl12xyx"}
+{"time":"2024-12-02T16:59:54.9150348-03:00","level":"INFO","msg":"stream: started","id":"irl12xyx"}
+{"time":"2024-12-02T16:59:54.9150348-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"irl12xyx"}
+{"time":"2024-12-02T16:59:54.9150348-03:00","level":"INFO","msg":"sender: started","stream_id":"irl12xyx"}
+{"time":"2024-12-02T16:59:54.9150348-03:00","level":"INFO","msg":"handler: started","stream_id":"irl12xyx"}
+{"time":"2024-12-02T16:59:55.3539562-03:00","level":"INFO","msg":"Starting system monitor"}

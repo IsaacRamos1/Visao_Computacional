@@ -1,0 +1,689 @@
+Epoca 1/1000, loss: 1.389129, balanced acc: 0.454564: 100%|███████████████████████████████████████████████| 198/198 [01:04<00:00,  3.08it/s]
+  0%|                                                                                                                | 0/25 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.19it/s]
+[1e-05]
+Best Loss: 1.1188102221488954 | Current loss: 1.1188102221488954 | strikes: 0
+continuando...
+
+Epoca 1/1000
+Treino -> Loss: 1.506730, Acurácia: 0.353729,
+Recall: 0.353729, F1-Score: 0.341628, Balanced_acc:  0.348541
+Validação -> Loss: 1.118810, Acurácia: 0.631946,
+Recall: 0.631946, F1-Score: 0.622596, Balanced_acc: 0.637983
+Epoca 2/1000, loss: 1.021962, balanced acc: 0.620198: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.12it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  6.28it/s]
+
+[1e-05]
+Best Loss: 0.8340389370918274 | Current loss: 0.8340389370918274 | strikes: 0
+continuando...
+
+Epoca 2/1000
+Treino -> Loss: 1.103699, Acurácia: 0.590917,
+Recall: 0.590917, F1-Score: 0.577104, Balanced_acc:  0.587069
+Validação -> Loss: 0.834039, Acurácia: 0.706907,
+Recall: 0.706907, F1-Score: 0.695698, Balanced_acc: 0.712502
+Epoca 3/1000, loss: 0.839077, balanced acc: 0.679524: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.12it/s]
+  0%|                                                                                                                | 0/25 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.06it/s]
+
+[1e-05]
+Best Loss: 0.706708470582962 | Current loss: 0.706708470582962 | strikes: 0
+continuando...
+
+Epoca 3/1000
+Treino -> Loss: 0.871498, Acurácia: 0.661444,
+Recall: 0.661444, F1-Score: 0.652508, Balanced_acc:  0.663343
+Validação -> Loss: 0.706708, Acurácia: 0.742755,
+Recall: 0.742755, F1-Score: 0.732939, Balanced_acc: 0.741244
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 4/1000, loss: 0.745739, balanced acc: 0.714398: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.12it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.05it/s]
+
+[1e-05]
+Best Loss: 0.6127149510383606 | Current loss: 0.6127149510383606 | strikes: 0
+continuando...
+
+Epoca 4/1000
+Treino -> Loss: 0.751635, Acurácia: 0.722879,
+Recall: 0.722879, F1-Score: 0.714099, Balanced_acc:  0.717210
+Validação -> Loss: 0.612715, Acurácia: 0.747929,
+Recall: 0.747929, F1-Score: 0.750844, Balanced_acc: 0.747568
+Epoca 5/1000, loss: 0.681008, balanced acc: 0.736224: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.12it/s]
+
+[1e-05]
+Best Loss: 0.5812561964988708 | Current loss: 0.5812561964988708 | strikes: 0
+continuando...
+
+Epoca 5/1000
+Treino -> Loss: 0.659847, Acurácia: 0.749631,
+Recall: 0.749631, F1-Score: 0.746181, Balanced_acc:  0.746311
+Validação -> Loss: 0.581256, Acurácia: 0.795696,
+Recall: 0.795696, F1-Score: 0.797566, Balanced_acc: 0.779912
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 6/1000, loss: 0.630732, balanced acc: 0.755014: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[1e-05]
+Best Loss: 0.5433477473258972 | Current loss: 0.5433477473258972 | strikes: 0
+continuando...
+
+Epoca 6/1000
+Treino -> Loss: 0.654629, Acurácia: 0.742348,
+Recall: 0.742348, F1-Score: 0.740269, Balanced_acc:  0.741064
+Validação -> Loss: 0.543348, Acurácia: 0.774078,
+Recall: 0.774078, F1-Score: 0.776752, Balanced_acc: 0.776253
+Epoca 7/1000, loss: 0.579854, balanced acc: 0.769978: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.21it/s]
+
+[1e-05]
+Best Loss: 0.5053355312347412 | Current loss: 0.5053355312347412 | strikes: 0
+continuando...
+
+Epoca 7/1000
+Treino -> Loss: 0.589275, Acurácia: 0.772296,
+Recall: 0.772296, F1-Score: 0.772752, Balanced_acc:  0.770795
+Validação -> Loss: 0.505336, Acurácia: 0.808683,
+Recall: 0.808683, F1-Score: 0.807717, Balanced_acc: 0.812833
+Epoca 8/1000, loss: 0.568934, balanced acc: 0.783562: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.17it/s]
+
+[1e-05]
+Best Loss: 0.4788461089134216 | Current loss: 0.4788461089134216 | strikes: 0
+continuando...
+
+Epoca 8/1000
+Treino -> Loss: 0.557132, Acurácia: 0.793939,
+Recall: 0.793939, F1-Score: 0.794195, Balanced_acc:  0.793505
+Validação -> Loss: 0.478846, Acurácia: 0.830378,
+Recall: 0.830378, F1-Score: 0.834060, Balanced_acc: 0.833657
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 9/1000, loss: 0.527364, balanced acc: 0.806064: 100%|███████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.21it/s]
+
+[1e-05]
+Best Loss: 0.47115372836589814 | Current loss: 0.47115372836589814 | strikes: 0
+continuando...
+
+Epoca 9/1000
+Treino -> Loss: 0.524938, Acurácia: 0.811817,
+Recall: 0.811817, F1-Score: 0.812733, Balanced_acc:  0.813160
+Validação -> Loss: 0.471154, Acurácia: 0.813738,
+Recall: 0.813738, F1-Score: 0.809895, Balanced_acc: 0.813673
+Epoca 10/1000, loss: 0.500664, balanced acc: 0.808685: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.15it/s]
+
+[1e-05]
+Best Loss: 0.44294300854206087 | Current loss: 0.44294300854206087 | strikes: 0
+continuando...
+
+Epoca 10/1000
+Treino -> Loss: 0.507991, Acurácia: 0.812318,
+Recall: 0.812318, F1-Score: 0.812635, Balanced_acc:  0.813581
+Validação -> Loss: 0.442943, Acurácia: 0.840267,
+Recall: 0.840267, F1-Score: 0.841171, Balanced_acc: 0.839779
+Epoca 11/1000, loss: 0.466988, balanced acc: 0.819022: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.07it/s]
+
+[1e-05]
+Best Loss: 0.4187751805782318 | Current loss: 0.4187751805782318 | strikes: 0
+continuando...
+
+Epoca 11/1000
+Treino -> Loss: 0.484203, Acurácia: 0.816898,
+Recall: 0.816898, F1-Score: 0.815509, Balanced_acc:  0.819064
+Validação -> Loss: 0.418775, Acurácia: 0.811944,
+Recall: 0.811944, F1-Score: 0.816865, Balanced_acc: 0.812847
+Epoca 12/1000, loss: 0.445379, balanced acc: 0.825160: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.11it/s]
+
+[1e-05]
+Best Loss: 0.4187751805782318 | Current loss: 0.41964628756046296 | strikes: 1
+continuando...
+
+Epoca 12/1000
+Treino -> Loss: 0.433501, Acurácia: 0.828900,
+Recall: 0.828900, F1-Score: 0.829297, Balanced_acc:  0.825367
+Validação -> Loss: 0.419646, Acurácia: 0.818309,
+Recall: 0.818309, F1-Score: 0.816689, Balanced_acc: 0.830745
+Epoca 13/1000, loss: 0.425428, balanced acc: 0.839006: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.10it/s]
+
+[1e-05]
+Best Loss: 0.40369834065437316 | Current loss: 0.40369834065437316 | strikes: 0
+continuando...
+
+Epoca 13/1000
+Treino -> Loss: 0.411620, Acurácia: 0.846945,
+Recall: 0.846945, F1-Score: 0.845216, Balanced_acc:  0.843333
+Validação -> Loss: 0.403698, Acurácia: 0.845957,
+Recall: 0.845957, F1-Score: 0.845274, Balanced_acc: 0.844530
+Epoca 14/1000, loss: 0.410400, balanced acc: 0.848861: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.17it/s]
+
+[1e-05]
+Best Loss: 0.39342370837926866 | Current loss: 0.39342370837926866 | strikes: 0
+continuando...
+
+Epoca 14/1000
+Treino -> Loss: 0.389439, Acurácia: 0.854881,
+Recall: 0.854881, F1-Score: 0.855776, Balanced_acc:  0.853255
+Validação -> Loss: 0.393424, Acurácia: 0.843201,
+Recall: 0.843201, F1-Score: 0.844433, Balanced_acc: 0.842223
+Epoca 15/1000, loss: 0.391021, balanced acc: 0.857005: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.22it/s]
+
+[1e-05]
+Best Loss: 0.39342370837926866 | Current loss: 0.4102142697572708 | strikes: 1
+continuando...
+
+Epoca 15/1000
+Treino -> Loss: 0.387690, Acurácia: 0.859973,
+Recall: 0.859973, F1-Score: 0.860216, Balanced_acc:  0.859382
+Validação -> Loss: 0.410214, Acurácia: 0.814171,
+Recall: 0.814171, F1-Score: 0.815688, Balanced_acc: 0.820990
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 16/1000, loss: 0.355645, balanced acc: 0.867229: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[1e-05]
+Best Loss: 0.39342370837926866 | Current loss: 0.40676251888275144 | strikes: 2
+continuando...
+
+Epoca 16/1000
+Treino -> Loss: 0.375457, Acurácia: 0.856994,
+Recall: 0.856994, F1-Score: 0.857285, Balanced_acc:  0.856291
+Validação -> Loss: 0.406763, Acurácia: 0.826328,
+Recall: 0.826328, F1-Score: 0.820034, Balanced_acc: 0.837396
+Epoca 17/1000, loss: 0.349924, balanced acc: 0.870599: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.13it/s]
+
+[1e-05]
+Best Loss: 0.39342370837926866 | Current loss: 0.4077389681339264 | strikes: 3
+continuando...
+
+Epoca 17/1000
+Treino -> Loss: 0.357726, Acurácia: 0.858355,
+Recall: 0.858355, F1-Score: 0.858814, Balanced_acc:  0.862049
+Validação -> Loss: 0.407739, Acurácia: 0.849074,
+Recall: 0.849074, F1-Score: 0.849205, Balanced_acc: 0.850132
+Epoca 18/1000, loss: 0.341119, balanced acc: 0.873884: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.17it/s]
+
+[1e-05]
+Best Loss: 0.39342370837926866 | Current loss: 0.3953915536403656 | strikes: 4
+continuando...
+
+Epoca 18/1000
+Treino -> Loss: 0.345526, Acurácia: 0.871906,
+Recall: 0.871906, F1-Score: 0.871677, Balanced_acc:  0.872381
+Validação -> Loss: 0.395392, Acurácia: 0.838066,
+Recall: 0.838066, F1-Score: 0.838836, Balanced_acc: 0.833515
+Epoca 19/1000, loss: 0.317602, balanced acc: 0.884804: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.19it/s]
+
+[1e-05]
+Best Loss: 0.38941346526145937 | Current loss: 0.38941346526145937 | strikes: 0
+continuando...
+
+Epoca 19/1000
+Treino -> Loss: 0.311092, Acurácia: 0.886371,
+Recall: 0.886371, F1-Score: 0.886092, Balanced_acc:  0.888007
+Validação -> Loss: 0.389413, Acurácia: 0.836268,
+Recall: 0.836268, F1-Score: 0.838264, Balanced_acc: 0.842089
+Epoca 20/1000, loss: 0.246176, balanced acc: 1.000000:   1%|▏                                               | 1/198 [00:00<01:07,  2.90it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 20/1000, loss: 0.297453, balanced acc: 0.893690: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.19it/s]
+
+[1e-05]
+Best Loss: 0.3785234957933426 | Current loss: 0.3785234957933426 | strikes: 0
+continuando...
+
+Epoca 20/1000
+Treino -> Loss: 0.294845, Acurácia: 0.898519,
+Recall: 0.898519, F1-Score: 0.898588, Balanced_acc:  0.898460
+Validação -> Loss: 0.378523, Acurácia: 0.846538,
+Recall: 0.846538, F1-Score: 0.849238, Balanced_acc: 0.849278
+Epoca 21/1000, loss: 0.273524, balanced acc: 0.908558: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.17it/s]
+
+[1e-05]
+Best Loss: 0.3780666697025299 | Current loss: 0.3780666697025299 | strikes: 0
+continuando...
+
+Epoca 21/1000
+Treino -> Loss: 0.273870, Acurácia: 0.911159,
+Recall: 0.911159, F1-Score: 0.911381, Balanced_acc:  0.911896
+Validação -> Loss: 0.378067, Acurácia: 0.863214,
+Recall: 0.863214, F1-Score: 0.863402, Balanced_acc: 0.859341
+Epoca 22/1000, loss: 0.281916, balanced acc: 0.892000: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.15it/s]
+
+[1e-05]
+Best Loss: 0.36620755136013033 | Current loss: 0.36620755136013033 | strikes: 0
+continuando...
+
+Epoca 22/1000
+Treino -> Loss: 0.270538, Acurácia: 0.897203,
+Recall: 0.897203, F1-Score: 0.897143, Balanced_acc:  0.896037
+Validação -> Loss: 0.366208, Acurácia: 0.838054,
+Recall: 0.838054, F1-Score: 0.837915, Balanced_acc: 0.841421
+Epoca 23/1000, loss: 0.275319, balanced acc: 0.902116: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[1e-05]
+Best Loss: 0.34101360499858857 | Current loss: 0.34101360499858857 | strikes: 0
+continuando...
+
+Epoca 23/1000
+Treino -> Loss: 0.273585, Acurácia: 0.898353,
+Recall: 0.898353, F1-Score: 0.898574, Balanced_acc:  0.898831
+Validação -> Loss: 0.341014, Acurácia: 0.871787,
+Recall: 0.871787, F1-Score: 0.870973, Balanced_acc: 0.866306
+Epoca 24/1000, loss: 0.268505, balanced acc: 0.908061: 100%|██████████████████████████████████████████████| 198/198 [01:04<00:00,  3.09it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[1e-05]
+Best Loss: 0.338777856528759 | Current loss: 0.338777856528759 | strikes: 0
+continuando...
+
+Epoca 24/1000
+Treino -> Loss: 0.281632, Acurácia: 0.900902,
+Recall: 0.900902, F1-Score: 0.900728, Balanced_acc:  0.901973
+Validação -> Loss: 0.338778, Acurácia: 0.879513,
+Recall: 0.879513, F1-Score: 0.879546, Balanced_acc: 0.872974
+Epoca 25/1000, loss: 0.242481, balanced acc: 0.913080: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.09it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.05it/s]
+
+[1e-05]
+Best Loss: 0.338777856528759 | Current loss: 0.35085478037595746 | strikes: 1
+continuando...
+
+Epoca 25/1000
+Treino -> Loss: 0.253186, Acurácia: 0.907093,
+Recall: 0.907093, F1-Score: 0.906910, Balanced_acc:  0.908193
+Validação -> Loss: 0.350855, Acurácia: 0.831800,
+Recall: 0.831800, F1-Score: 0.837437, Balanced_acc: 0.836511
+Epoca 26/1000, loss: 0.248792, balanced acc: 0.905798: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.14it/s]
+
+[1e-05]
+Best Loss: 0.338777856528759 | Current loss: 0.34542937397956847 | strikes: 2
+continuando...
+
+Epoca 26/1000
+Treino -> Loss: 0.257091, Acurácia: 0.902079,
+Recall: 0.902079, F1-Score: 0.902428, Balanced_acc:  0.903246
+Validação -> Loss: 0.345429, Acurácia: 0.884320,
+Recall: 0.884320, F1-Score: 0.884487, Balanced_acc: 0.884541
+Epoca 27/1000, loss: 0.226988, balanced acc: 0.923160: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.09it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.22it/s]
+
+[1e-05]
+Best Loss: 0.338777856528759 | Current loss: 0.3654781574010849 | strikes: 3
+continuando...
+
+Epoca 27/1000
+Treino -> Loss: 0.228789, Acurácia: 0.925118,
+Recall: 0.925118, F1-Score: 0.925078, Balanced_acc:  0.926229
+Validação -> Loss: 0.365478, Acurácia: 0.850807,
+Recall: 0.850807, F1-Score: 0.850776, Balanced_acc: 0.856677
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 28/1000, loss: 0.215951, balanced acc: 0.928063: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.17it/s]
+
+[1e-05]
+Best Loss: 0.338777856528759 | Current loss: 0.37543034613132475 | strikes: 4
+continuando...
+
+Epoca 28/1000
+Treino -> Loss: 0.224559, Acurácia: 0.924688,
+Recall: 0.924688, F1-Score: 0.924663, Balanced_acc:  0.926322
+Validação -> Loss: 0.375430, Acurácia: 0.843276,
+Recall: 0.843276, F1-Score: 0.842395, Balanced_acc: 0.844659
+Epoca 29/1000, loss: 0.203317, balanced acc: 0.932924: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.08it/s]
+
+[1e-05]
+Best Loss: 0.338777856528759 | Current loss: 0.39670262157917024 | strikes: 5
+continuando...
+
+Epoca 29/1000
+Treino -> Loss: 0.207698, Acurácia: 0.928852,
+Recall: 0.928852, F1-Score: 0.928808, Balanced_acc:  0.927990
+Validação -> Loss: 0.396703, Acurácia: 0.826171,
+Recall: 0.826171, F1-Score: 0.826710, Balanced_acc: 0.829690
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 30/1000, loss: 0.194477, balanced acc: 0.934893: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.14it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.40334941297769544 | strikes: 6
+continuando...
+
+Epoca 30/1000
+Treino -> Loss: 0.200719, Acurácia: 0.926608,
+Recall: 0.926608, F1-Score: 0.926877, Balanced_acc:  0.927490
+Validação -> Loss: 0.403349, Acurácia: 0.856999,
+Recall: 0.856999, F1-Score: 0.860222, Balanced_acc: 0.851369
+Epoca 31/1000, loss: 0.190435, balanced acc: 0.936429: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.11it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3865151742100716 | strikes: 7
+continuando...
+
+Epoca 31/1000
+Treino -> Loss: 0.187493, Acurácia: 0.937139,
+Recall: 0.937139, F1-Score: 0.937234, Balanced_acc:  0.937392
+Validação -> Loss: 0.386515, Acurácia: 0.859464,
+Recall: 0.859464, F1-Score: 0.859836, Balanced_acc: 0.856121
+Epoca 32/1000, loss: 0.191246, balanced acc: 0.935838: 100%|██████████████████████████████████████████████| 198/198 [01:04<00:00,  3.06it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  6.32it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.35837369471788405 | strikes: 8
+continuando...
+
+Epoca 32/1000
+Treino -> Loss: 0.185933, Acurácia: 0.934142,
+Recall: 0.934142, F1-Score: 0.934392, Balanced_acc:  0.935524
+Validação -> Loss: 0.358374, Acurácia: 0.856163,
+Recall: 0.856163, F1-Score: 0.857354, Balanced_acc: 0.858730
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 33/1000, loss: 0.204765, balanced acc: 0.926799: 100%|██████████████████████████████████████████████| 198/198 [01:04<00:00,  3.09it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.18it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.37682093858718874 | strikes: 9
+continuando...
+
+Epoca 33/1000
+Treino -> Loss: 0.201029, Acurácia: 0.927023,
+Recall: 0.927023, F1-Score: 0.927156, Balanced_acc:  0.926537
+Validação -> Loss: 0.376821, Acurácia: 0.868152,
+Recall: 0.868152, F1-Score: 0.868413, Balanced_acc: 0.871888
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 34/1000, loss: 0.176984, balanced acc: 0.943258: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.14it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3784248475730419 | strikes: 10
+continuando...
+
+Epoca 34/1000
+Treino -> Loss: 0.174993, Acurácia: 0.943782,
+Recall: 0.943782, F1-Score: 0.943813, Balanced_acc:  0.943256
+Validação -> Loss: 0.378425, Acurácia: 0.842117,
+Recall: 0.842117, F1-Score: 0.840238, Balanced_acc: 0.841648
+Epoca 35/1000, loss: 0.185549, balanced acc: 0.935948: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3713212586939335 | strikes: 11
+continuando...
+
+Epoca 35/1000
+Treino -> Loss: 0.189009, Acurácia: 0.934657,
+Recall: 0.934657, F1-Score: 0.935010, Balanced_acc:  0.934705
+Validação -> Loss: 0.371321, Acurácia: 0.853748,
+Recall: 0.853748, F1-Score: 0.858575, Balanced_acc: 0.857129
+Epoca 36/1000, loss: 0.182192, balanced acc: 0.936540: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+  0%|                                                                                                                | 0/25 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.15it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.36597436398267746 | strikes: 12
+continuando...
+
+Epoca 36/1000
+Treino -> Loss: 0.200903, Acurácia: 0.934101,
+Recall: 0.934101, F1-Score: 0.934335, Balanced_acc:  0.935354
+Validação -> Loss: 0.365974, Acurácia: 0.849039,
+Recall: 0.849039, F1-Score: 0.847961, Balanced_acc: 0.836626
+Epoca 37/1000, loss: 0.192377, balanced acc: 0.934992: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.22it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.37875281006097794 | strikes: 13
+continuando...
+
+Epoca 37/1000
+Treino -> Loss: 0.200974, Acurácia: 0.930879,
+Recall: 0.930879, F1-Score: 0.930661, Balanced_acc:  0.932055
+Validação -> Loss: 0.378753, Acurácia: 0.887616,
+Recall: 0.887616, F1-Score: 0.887955, Balanced_acc: 0.889315
+Epoca 38/1000, loss: 0.171570, balanced acc: 0.941033: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.14it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3618253406882286 | strikes: 14
+continuando...
+
+Epoca 38/1000
+Treino -> Loss: 0.170912, Acurácia: 0.942667,
+Recall: 0.942667, F1-Score: 0.942615, Balanced_acc:  0.943204
+Validação -> Loss: 0.361825, Acurácia: 0.871756,
+Recall: 0.871756, F1-Score: 0.873307, Balanced_acc: 0.874709
+Epoca 39/1000, loss: 0.177391, balanced acc: 0.937686: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.03it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3671439352631569 | strikes: 15
+continuando...
+
+Epoca 39/1000
+Treino -> Loss: 0.188022, Acurácia: 0.930823,
+Recall: 0.930823, F1-Score: 0.930568, Balanced_acc:  0.932353
+Validação -> Loss: 0.367144, Acurácia: 0.888559,
+Recall: 0.888559, F1-Score: 0.886375, Balanced_acc: 0.876109
+Epoca 40/1000, loss: 0.176706, balanced acc: 0.938686: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.14it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.362883979678154 | strikes: 16
+continuando...
+
+Epoca 40/1000
+Treino -> Loss: 0.178529, Acurácia: 0.942240,
+Recall: 0.942240, F1-Score: 0.942108, Balanced_acc:  0.943241
+Validação -> Loss: 0.362884, Acurácia: 0.869967,
+Recall: 0.869967, F1-Score: 0.871552, Balanced_acc: 0.867511
+Epoca 41/1000, loss: 0.167170, balanced acc: 0.942304: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.08it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.37260919250547886 | strikes: 17
+continuando...
+
+Epoca 41/1000
+Treino -> Loss: 0.171890, Acurácia: 0.941842,
+Recall: 0.941842, F1-Score: 0.941899, Balanced_acc:  0.942664
+Validação -> Loss: 0.372609, Acurácia: 0.856207,
+Recall: 0.856207, F1-Score: 0.858165, Balanced_acc: 0.857800
+Epoca 42/1000, loss: 0.192071, balanced acc: 0.932648: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.15it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3793532538414002 | strikes: 18
+continuando...
+
+Epoca 42/1000
+Treino -> Loss: 0.184657, Acurácia: 0.936639,
+Recall: 0.936639, F1-Score: 0.936757, Balanced_acc:  0.937823
+Validação -> Loss: 0.379353, Acurácia: 0.867171,
+Recall: 0.867171, F1-Score: 0.865832, Balanced_acc: 0.868431
+Epoca 43/1000, loss: 0.172682, balanced acc: 0.943328: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.21it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3661934272944927 | strikes: 19
+continuando...
+
+Epoca 43/1000
+Treino -> Loss: 0.178970, Acurácia: 0.940987,
+Recall: 0.940987, F1-Score: 0.941194, Balanced_acc:  0.939976
+Validação -> Loss: 0.366193, Acurácia: 0.888441,
+Recall: 0.888441, F1-Score: 0.888725, Balanced_acc: 0.887085
+Epoca 44/1000, loss: 0.179197, balanced acc: 0.940635: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.02it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3600744645297527 | strikes: 20
+continuando...
+
+Epoca 44/1000
+Treino -> Loss: 0.211069, Acurácia: 0.929386,
+Recall: 0.929386, F1-Score: 0.929901, Balanced_acc:  0.929930
+Validação -> Loss: 0.360074, Acurácia: 0.850534,
+Recall: 0.850534, F1-Score: 0.851351, Balanced_acc: 0.850786
+Epoca 45/1000, loss: 0.182887, balanced acc: 0.939416: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.04it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3707809456065297 | strikes: 21
+continuando...
+
+Epoca 45/1000
+Treino -> Loss: 0.184688, Acurácia: 0.944775,
+Recall: 0.944775, F1-Score: 0.944782, Balanced_acc:  0.945020
+Validação -> Loss: 0.370781, Acurácia: 0.859333,
+Recall: 0.859333, F1-Score: 0.860493, Balanced_acc: 0.855558
+Epoca 46/1000, loss: 0.172976, balanced acc: 0.940213: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.13it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.37030033975839616 | strikes: 22
+continuando...
+
+Epoca 46/1000
+Treino -> Loss: 0.165543, Acurácia: 0.942948,
+Recall: 0.942948, F1-Score: 0.942910, Balanced_acc:  0.942084
+Validação -> Loss: 0.370300, Acurácia: 0.843970,
+Recall: 0.843970, F1-Score: 0.843469, Balanced_acc: 0.846763
+Epoca 47/1000, loss: 0.178100, balanced acc: 0.939551: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.14it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.36609635218977926 | strikes: 23
+continuando...
+
+Epoca 47/1000
+Treino -> Loss: 0.182546, Acurácia: 0.935195,
+Recall: 0.935195, F1-Score: 0.935130, Balanced_acc:  0.935602
+Validação -> Loss: 0.366096, Acurácia: 0.853518,
+Recall: 0.853518, F1-Score: 0.852999, Balanced_acc: 0.856443
+Epoca 48/1000, loss: 0.180257, balanced acc: 0.937075: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+  0%|                                                                                                                | 0/25 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.22it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.36653276860713957 | strikes: 24
+continuando...
+
+Epoca 48/1000
+Treino -> Loss: 0.162681, Acurácia: 0.943988,
+Recall: 0.943988, F1-Score: 0.943893, Balanced_acc:  0.943537
+Validação -> Loss: 0.366533, Acurácia: 0.860800,
+Recall: 0.860800, F1-Score: 0.861202, Balanced_acc: 0.875559
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 49/1000, loss: 0.187577, balanced acc: 0.935472: 100%|██████████████████████████████████████████████| 198/198 [01:04<00:00,  3.09it/s]
+  0%|                                                                                                                | 0/25 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.06it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.37598112642765047 | strikes: 25
+continuando...
+
+Epoca 49/1000
+Treino -> Loss: 0.197538, Acurácia: 0.931759,
+Recall: 0.931759, F1-Score: 0.931884, Balanced_acc:  0.931919
+Validação -> Loss: 0.375981, Acurácia: 0.892497,
+Recall: 0.892497, F1-Score: 0.894632, Balanced_acc: 0.898847
+Epoca 50/1000, loss: 0.167087, balanced acc: 0.942806: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.37896995425224306 | strikes: 26
+continuando...
+
+Epoca 50/1000
+Treino -> Loss: 0.170605, Acurácia: 0.942236,
+Recall: 0.942236, F1-Score: 0.942372, Balanced_acc:  0.943899
+Validação -> Loss: 0.378970, Acurácia: 0.853451,
+Recall: 0.853451, F1-Score: 0.849435, Balanced_acc: 0.858662
+Epoca 51/1000, loss: 0.169651, balanced acc: 0.944454: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.15it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3661260023713112 | strikes: 27
+continuando...
+
+Epoca 51/1000
+Treino -> Loss: 0.172699, Acurácia: 0.939276,
+Recall: 0.939276, F1-Score: 0.939395, Balanced_acc:  0.940245
+Validação -> Loss: 0.366126, Acurácia: 0.882785,
+Recall: 0.882785, F1-Score: 0.883412, Balanced_acc: 0.886759
+  0%|                                                                                                               | 0/198 [00:00<?, ?it/s]C:\Users\isaac\AppData\Local\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:2458: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Epoca 52/1000, loss: 0.168506, balanced acc: 0.945975: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.11it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.11it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.36084182143211363 | strikes: 28
+continuando...
+
+Epoca 52/1000
+Treino -> Loss: 0.157350, Acurácia: 0.951675,
+Recall: 0.951675, F1-Score: 0.951881, Balanced_acc:  0.951643
+Validação -> Loss: 0.360842, Acurácia: 0.834550,
+Recall: 0.834550, F1-Score: 0.835318, Balanced_acc: 0.830023
+Epoca 53/1000, loss: 0.170391, balanced acc: 0.946193: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.16it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.3782370889186859 | strikes: 29
+continuando...
+
+Epoca 53/1000
+Treino -> Loss: 0.168606, Acurácia: 0.945620,
+Recall: 0.945620, F1-Score: 0.945467, Balanced_acc:  0.945912
+Validação -> Loss: 0.378237, Acurácia: 0.852723,
+Recall: 0.852723, F1-Score: 0.851674, Balanced_acc: 0.858784
+Epoca 54/1000, loss: 0.173355, balanced acc: 0.941864: 100%|██████████████████████████████████████████████| 198/198 [01:03<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.19it/s]
+
+[5.000000000000001e-07]
+Best Loss: 0.338777856528759 | Current loss: 0.366353522837162 | strikes: 30
+Early Stopping .......
+Iniciando teste...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.17it/s]
+Teste -> Loss: 0.389204, Acurácia: 0.861741,
+Recall: 0.861741, F1-Score: 0.861740, Balanced_acc: 0.861835
+Relatório de Classificação:
+               precision    recall  f1-score   support
+
+    Classe 0       0.78      0.64      0.70        78
+    Classe 1       0.99      0.96      0.97        74
+    Classe 2       0.88      0.96      0.92        82
+    Classe 3       0.95      0.94      0.94        82
+    Classe 4       0.73      0.81      0.77        80
+
+    accuracy                           0.86       396
+   macro avg       0.87      0.86      0.86       396
+weighted avg       0.86      0.86      0.86       396

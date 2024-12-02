@@ -1,0 +1,16 @@
+{"time":"2024-12-01T11:30:12.6386132-03:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-12-01T11:30:12.6386132-03:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\isaac\\Desktop\\UFPI_2023\\Mestrado_2024\\Sistemas_de_Computacao_Visual\\Visao_Computacional\\wandb\\run-20241201_113012-7idc15uj\\logs\\debug-core.log"}
+{"time":"2024-12-01T11:30:12.9099906-03:00","level":"INFO","msg":"created new stream","id":"7idc15uj"}
+{"time":"2024-12-01T11:30:12.9099906-03:00","level":"INFO","msg":"stream: started","id":"7idc15uj"}
+{"time":"2024-12-01T11:30:12.9099906-03:00","level":"INFO","msg":"handler: started","stream_id":"7idc15uj"}
+{"time":"2024-12-01T11:30:12.9099906-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"7idc15uj"}
+{"time":"2024-12-01T11:30:12.9099906-03:00","level":"INFO","msg":"sender: started","stream_id":"7idc15uj"}
+{"time":"2024-12-01T11:30:13.3040303-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-01T11:30:19.2982146-03:00","level":"INFO","msg":"stream: closing","id":"7idc15uj"}
+{"time":"2024-12-01T11:30:19.2982146-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-01T11:30:19.2987793-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-01T11:30:21.9290695-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-01T11:30:22.2252354-03:00","level":"INFO","msg":"handler: closed","stream_id":"7idc15uj"}
+{"time":"2024-12-01T11:30:22.2252354-03:00","level":"INFO","msg":"sender: closed","stream_id":"7idc15uj"}
+{"time":"2024-12-01T11:30:22.2252354-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7idc15uj"}
+{"time":"2024-12-01T11:30:22.225769-03:00","level":"INFO","msg":"stream: closed","id":"7idc15uj"}
